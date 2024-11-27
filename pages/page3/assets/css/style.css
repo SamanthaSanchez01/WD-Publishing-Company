@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body
+{
+    min-height: 100vh;
+    background-image: url('products.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav
+{
+    background-color: rgb(152, 7, 7);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul
+{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li
+{
+    height: 50px;
+}
+
+nav a
+{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover
+{
+    background-color: rgb(87, 10, 10);
+    color: #f0e68c;
+}
+
+nav li:first-child
+{
+    margin-right: auto;
+}
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(152, 7, 7, 0.45);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li
+{
+    width: 100%;
+}
+
+.sidebar a
+{
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+.products-section {
+    display: flex;
+    justify-content: space-around; /* Space between products */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    padding: 40px 20px;
+    gap: 20px;
+   
+}
+
+
+.buy-now {
+    margin-top: 310px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #98070773;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-now:hover {
+    background-color: #6205051c; /* Darker on hover */
+    transform: scale(1.05);
+}
+
+.buy-now:active {
+    background-color: #111; /* Even darker on click */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .products-section {
+        flex-direction: column; /* Stack products vertically */
+        gap: 40px; /* Increase spacing between stacked products */
+    }
+
+    .product {
+        width: 90%; /* Take full width of the screen */
+    }
+}
