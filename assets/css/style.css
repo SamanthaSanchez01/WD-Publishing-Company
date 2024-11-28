@@ -14,24 +14,20 @@ body {
 }
 
 nav {
-    background-color: rgb(152, 7, 7);
+    background-color: #980707;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
 }
 
 nav ul {
+    width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
 }
 
 nav li {
