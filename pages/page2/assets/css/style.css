@@ -1,10 +1,9 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
-body
-{
+body {
     min-height: 100vh;
     background-image: url('contacts.png');
     background-size: cover;
@@ -13,8 +12,7 @@ body
     font-family: 'Times New Roman', Times, serif;
 }
 
-nav
-{
+nav {
     background-color: rgb(152, 7, 7);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -23,8 +21,7 @@ nav
     z-index: 1000;
 }
 
-nav ul
-{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -32,13 +29,11 @@ nav ul
     align-items: center;
 }
 
-nav li
-{
+nav li {
     height: 50px;
 }
 
-nav a
-{
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -48,19 +43,16 @@ nav a
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover
-{
+nav a:hover {
     background-color: rgb(87, 10, 10);
     color: #f0e68c;
 }
 
-nav li:first-child
-{
+nav li:first-child {
     margin-right: auto;
 }
 
-.sidebar
-{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -76,24 +68,43 @@ nav li:first-child
     justify-content: flex-start;
 }
 
-.sidebar li
-{
+.sidebar li {
     width: 100%;
 }
 
-.sidebar a
-{
+.sidebar a {
     width: 100%;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
+/* Responsive for Tablets (≤ 800px) */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none; /* Hide specific elements on tablets */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Allow nav items to wrap if necessary */
+    }
+
+    nav a {
+        padding: 0 20px; /* Adjust padding for narrower screens */
+        font-size: 14px; /* Reduce font size for better fit */
     }
 }
 
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
+/* Responsive for Phones (≤ 400px) */
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%; /* Sidebar spans full width on smaller devices */
+    }
+
+    .sidebar a {
+        font-size: 14px; /* Slightly smaller font for readability */
+        padding: 10px 15px; /* Adjust padding for touch accessibility */
+    }
+
+    nav a {
+        padding: 0 10px; /* Compact nav links for small screens */
+        font-size: 12px; /* Ensure text fits comfortably */
     }
 }

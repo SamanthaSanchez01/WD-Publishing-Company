@@ -1,10 +1,10 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body
-{
+body {
     min-height: 100vh;
     background-image: url('HOME.png');
     background-size: cover;
@@ -13,32 +13,32 @@ body
     font-family: 'Times New Roman', Times, serif;
 }
 
-nav
-{
+nav {
     background-color: rgb(152, 7, 7);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
-nav ul
-{
-    width: 100%;
+nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
-nav li
-{
+nav li {
     height: 50px;
 }
 
-nav a
-{
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -48,19 +48,16 @@ nav a
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover
-{
+nav a:hover {
     background-color: rgb(87, 10, 10);
     color: #f0e68c;
 }
 
-nav li:first-child
-{
+nav li:first-child {
     margin-right: auto;
 }
 
-.sidebar
-{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -74,26 +71,56 @@ nav li:first-child
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 20px;
 }
 
-.sidebar li
-{
+.sidebar li {
     width: 100%;
+    margin-bottom: 10px;
 }
 
-.sidebar a
-{
+.sidebar a {
     width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
+.sidebar a:hover {
+    background-color: rgb(87, 10, 10);
+    color: #f0e68c;
+}
+
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none; 
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 0 20px;
     }
 }
 
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%; 
+    }
+
+    .sidebar a {
+        font-size: 14px; 
+        padding: 10px 15px;
+    }
+
+    nav a {
+        padding: 0 10px;
+        font-size: 14px;
     }
 }
