@@ -17,6 +17,10 @@ nav
 {
     background-color: rgb(152, 7, 7);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul
@@ -96,9 +100,9 @@ nav li:first-child
 
 .products-section {
     display: flex;
-    justify-content: space-around; /* Space between products */
+    justify-content: space-around; 
     align-items: center;
-    flex-wrap: wrap; /* Wrap items on smaller screens */
+    flex-wrap: wrap; 
     padding: 40px 20px;
     gap: 20px;
    
@@ -118,22 +122,22 @@ nav li:first-child
 }
 
 .buy-now:hover {
-    background-color: #6205051c; /* Darker on hover */
+    background-color: #6205051c; 
     transform: scale(1.05);
 }
 
 .buy-now:active {
-    background-color: #111; /* Even darker on click */
+    background-color: #111; 
 }
 
-/* Responsive Design for Small Screens */
+
 @media (max-width: 768px) {
     .products-section {
-        flex-direction: column; /* Stack products vertically */
-        gap: 40px; /* Increase spacing between stacked products */
+        flex-direction: column; 
+        gap: 40px; 
     }
 
     .product {
-        width: 90%; /* Take full width of the screen */
+        width: 90%; 
     }
 }
