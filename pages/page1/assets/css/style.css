@@ -94,47 +94,47 @@ nav li:first-child {
     width: 100%;
 }
 
-/* Responsive for Tablets (≤ 800px) */
+
 @media (max-width: 800px) {
     .hideOnMobile {
-        display: none; /* Hide unnecessary links for smaller screens */
+        display: none;
     }
 
     nav ul {
-        flex-wrap: wrap; /* Adjust nav items for smaller space */
+        flex-wrap: wrap;
     }
 
     nav a {
-        padding: 0 20px; /* Reduce spacing for nav links */
-        font-size: 14px; /* Smaller text for better fit */
+        padding: 0 20px;
+        font-size: 14px;
     }
 
     .first-image {
-        background-size: cover; /* Ensure images adjust gracefully */
+        background-size: cover;
     }
 
     .second-image {
-        background-size: 100% auto; /* Maintain alignment for smaller widths */
+        background-size: 100% auto;
     }
 }
 
-/* Responsive for Phones (≤ 400px) */
+
 @media (max-width: 400px) {
     .sidebar {
-        width: 100%; /* Sidebar spans full width on smaller screens */
+        width: 100%;
     }
 
     .sidebar a {
-        font-size: 14px; /* Slightly smaller font for readability */
-        padding: 10px 15px; /* Adjust spacing for better touch target */
+        font-size: 14px;
+        padding: 10px 15px;
     }
 
     nav a {
-        padding: 0 10px; /* Compact nav links for small screens */
-        font-size: 12px; /* Ensure text doesn't overflow */
+        padding: 0 10px;
+        font-size: 12px;
     }
 
     .first-image, .second-image {
-        background-size: cover; /* Images fully scale for small screens */
+        background-size: cover;
     }
 }

@@ -75,16 +75,11 @@ nav li:first-child {
 
 .sidebar li {
     width: 100%;
-    margin-bottom: 10px;
+    
 }
 
 .sidebar a {
     width: 100%;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .sidebar a:hover {
