@@ -6,11 +6,12 @@
 body
 {
     min-height: 100vh;
-    background-image: url('contacts.png');
+    background-image: url('harry.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 5rem;
 }
 
 nav
@@ -95,5 +96,49 @@ nav li:first-child
 @media(max-width: 400px){
     .sidebar{
         width: 100%;
+    }
+}
+
+.products-section {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap; 
+    padding: 45px 155px;
+    gap: 20px;
+   
+}
+
+
+.buy-now {
+    margin-top: 310px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #98070773;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-now:hover {
+    background-color: #6205051c; 
+    transform: scale(1.05);
+}
+
+.buy-now:active {
+    background-color: #111; 
+}
+
+
+@media (max-width: 768px) {
+    .products-section {
+        flex-direction: column; 
+        gap: 40px; 
+    }
+
+    .product {
+        width: 90%; 
     }
 }

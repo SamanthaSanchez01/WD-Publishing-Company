@@ -9,7 +9,7 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">WD-Publishing-Company-Website</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
@@ -63,16 +63,69 @@ Description of the project in details.
 
 Guiding Question:
 - What is the project
+The project is a Publishing Company Website designed to represent a publishing company's online presence. It consists of multiple web pages that provide visitors with information about the company, its products, and services. The website includes a navigation bar that allows users to explore the following pages:
+
+Home Page: An overview of the company.
+About Us Page: Detailed information about the company’s mission, history, and team.
+Products Page: A showcase of the company’s books, magazines, or other publications.
+Contacts Page: Contact information, a form for inquiries, and other communication methods.
+
 - Whats the purpose
+The purpose of the website is to:
+
+1.Establish the publishing company's online identity.
+2.Provide customers with an easy way to explore products and services.
+3.Build credibility by sharing the company’s story and mission.
+4.Enable potential clients to contact the company through the Contact Us page.
+5.Improve customer engagement and showcase the company’s products in a professional and user-friendly way.
+
 - What are key components
+Responsive Navbar:
+
+A navigation bar that works across devices (desktop, tablet, and mobile).
+The navbar includes links to all the main pages: Home, About Us, Products, and Contacts.
+It has a collapsible sidebar for smaller screens (activated by a hamburger menu).
+
+Web Pages:
+
+Home Page: Introduction to the publishing company with key highlights.
+About Us Page: Details the company's background, mission, and vision.
+Products Page: A gallery or list of books and publications offered by the company.
+Contacts Page: Includes contact details and a form to submit inquiries.
+Styling:
+
+The website uses CSS to ensure a clean, consistent, and visually appealing design.
+Elements are styled for responsiveness to adjust gracefully to different screen sizes.
+JavaScript Functionality:
+
+Used to add interactivity, such as showing and hiding the sidebar menu.
+
 - What technology used and how it is used
+HTML (HyperText Markup Language):
+
+Used to structure the website and organize content into pages (e.g., headings, navigation links, text content, and forms).
+Forms the skeleton of the website.
+
+CSS (Cascading Style Sheets):
+
+Provides the visual styling for the website, including fonts, colors, layouts, and animations.
+Used to create a responsive design so the website works on all devices.
+Ensures consistency in the appearance of elements like the navbar, sidebar, and pages.
+
+JavaScript:
+
+Adds interactivity to the website.
+For example:
+The hamburger menu functionality for mobile users is implemented using JavaScript.
+The showSidebar() and hideSidebar() functions toggle the visibility of the sidebar navigation menu.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Sidebar Menu (hamburger menu)
+- Responsive Website
+- Responsive Navbar/Sidebar Menu
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -119,4 +172,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Responsive Navbar | is a navigation bar designed to adapt its layout and functionality based on the device or screen size being used. The main purpose of a responsive navbar is to provide a user-friendly experience on various devices, such as desktops, tablets, and smartphones. | https://youtu.be/U8smiWQ8Seg?si=1nvYUVfaHUvJG8k_ |
