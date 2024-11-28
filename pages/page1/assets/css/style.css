@@ -1,17 +1,16 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
+
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #980707;
 }
 
-/* First Section (ABOUT US) */
+
 .first-image {
     height: 100vh;
     background-image: url('ABOUT US.png');
@@ -20,7 +19,7 @@ body {
     background-position: center top;
 }
 
-/* Second Section (MISSION) */
+
 .second-image {
     height: 100vh;
     background-image: url('mission.png');
@@ -29,7 +28,7 @@ body {
     background-position: center top;
 }
 
-/* Navigation */
+
 nav {
     background-color: #980707;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -70,7 +69,7 @@ nav li:first-child {
     margin-right: auto;
 }
 
-/* Sidebar */
+
 .sidebar {
     position: fixed;
     top: 0;
