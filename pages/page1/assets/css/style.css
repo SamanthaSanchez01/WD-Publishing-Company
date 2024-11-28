@@ -1,36 +1,36 @@
-/* Reset margin and padding */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #980707; /* Fallback color */
+    background-color: #980707;
 }
 
-/* First Section - ABOUT US.png */
+/* First Section (ABOUT US) */
 .first-image {
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     background-image: url('ABOUT US.png');
-    background-size: 100% auto; /* Ensure it covers the width */
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center top;
 }
 
-/* Second Section - SECOND_IMAGE.png */
+/* Second Section (MISSION) */
 .second-image {
-    height: 100vh; /* Full screen height */
+    height: 100vh;
     background-image: url('mission.png');
-    background-size: 80% auto; /* Ensure it covers the width */
+    background-size: 80% auto;
     background-repeat: no-repeat;
     background-position: center top;
 }
 
-
-nav
-{
+/* Navigation */
+nav {
     background-color: #980707;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -39,8 +39,7 @@ nav
     z-index: 1000;
 }
 
-nav ul
-{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
@@ -48,13 +47,11 @@ nav ul
     align-items: center;
 }
 
-nav li
-{
+nav li {
     height: 50px;
 }
 
-nav a
-{
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -64,19 +61,17 @@ nav a
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover
-{
+nav a:hover {
     background-color: rgb(87, 10, 10);
     color: #f0e68c;
 }
 
-nav li:first-child
-{
+nav li:first-child {
     margin-right: auto;
 }
 
-.sidebar
-{
+/* Sidebar */
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -92,24 +87,55 @@ nav li:first-child
     justify-content: flex-start;
 }
 
-.sidebar li
-{
+.sidebar li {
     width: 100%;
 }
 
-.sidebar a
-{
+.sidebar a {
     width: 100%;
 }
 
-@media(max-width: 800px){
-    .hideOnMobile{
-        display: none;
+/* Responsive for Tablets (≤ 800px) */
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none; /* Hide unnecessary links for smaller screens */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Adjust nav items for smaller space */
+    }
+
+    nav a {
+        padding: 0 20px; /* Reduce spacing for nav links */
+        font-size: 14px; /* Smaller text for better fit */
+    }
+
+    .first-image {
+        background-size: cover; /* Ensure images adjust gracefully */
+    }
+
+    .second-image {
+        background-size: 100% auto; /* Maintain alignment for smaller widths */
     }
 }
 
-@media(max-width: 400px){
-    .sidebar{
-        width: 100%;
+/* Responsive for Phones (≤ 400px) */
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%; /* Sidebar spans full width on smaller screens */
+    }
+
+    .sidebar a {
+        font-size: 14px; /* Slightly smaller font for readability */
+        padding: 10px 15px; /* Adjust spacing for better touch target */
+    }
+
+    nav a {
+        padding: 0 10px; /* Compact nav links for small screens */
+        font-size: 12px; /* Ensure text doesn't overflow */
+    }
+
+    .first-image, .second-image {
+        background-size: cover; /* Images fully scale for small screens */
     }
 }
